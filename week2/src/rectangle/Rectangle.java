@@ -2,11 +2,11 @@ package rectangle;
 
 import java.awt.*;
 
-public class rectangle {
+public class Rectangle {
     double width, height;
-    public rectangle(){
+    public Rectangle(){
     }
-    public rectangle(double width, double height){
+    public Rectangle(double width, double height){
         this.height = height;
         this.width = width;
     }
@@ -19,7 +19,7 @@ public class rectangle {
     public String display(){
         return "Rectangle{"+"width= " + width +",height= " + height +"}";
     }
-
-
+    
+    
 }
 
