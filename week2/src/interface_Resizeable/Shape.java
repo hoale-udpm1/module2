@@ -1,6 +1,6 @@
-package Resizeable;
+package interface_Resizeable;
 
-public class Shape {
+public abstract class Shape implements Resizeable {
     private String color = "green";
     private boolean filled = true;
 
@@ -10,6 +10,9 @@ public class Shape {
     public Shape(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
+    }
+
+    public Shape(double v){
     }
 
     public String getColor() {
@@ -36,4 +39,8 @@ public class Shape {
                 + (isFilled() ? "filled" : "not filled");
     }
 
+    //    @Override
+//    public void Resize(double percent) {
+//
+//    }
 }

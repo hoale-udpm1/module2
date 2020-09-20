@@ -1,9 +1,9 @@
-package Circle;
+package Access_Modifier;
 
 public class Circle {
     private static final double PI=3.14;
     private double radius = 1.0;
-    private final String color = "red";
+    private String color = "red";
     Circle(){
     }
     Circle(double radius){

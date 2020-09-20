@@ -1,8 +1,8 @@
 package car;
 
 public class car {
-    private String name;
-    private String engine;
+    private final String name;
+    private final String engine;
     public static int numberOfCars;
     public car(String name, String engine){
         this.name = name;

@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class greatest_common_divisor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -17,4 +16,3 @@ public class greatest_common_divisor {
     public static int BCNN(int a, int b){
         return ( a * b) / UCLN(a,b);
     }
-}

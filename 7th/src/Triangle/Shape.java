@@ -1,10 +1,12 @@
-package Resizeable;
+package Triangle;
 
 public class Shape {
-    private String color = "green";
-    private boolean filled = true;
+    private String color;
+    private boolean filled;
 
     public Shape() {
+        this.color = "Green";
+        this.filled = true;
     }
 
     public Shape(String color, boolean filled) {
@@ -16,12 +18,12 @@ public class Shape {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public boolean isFilled() {
         return filled;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public void setFilled(boolean filled) {
@@ -30,10 +32,8 @@ public class Shape {
 
     @Override
     public String toString() {
-        return "A Shape with color of "
-                + getColor()
-                + " and "
-                + (isFilled() ? "filled" : "not filled");
+        return "A Shape with " +
+                "color of " + getColor() +
+                (isFilled() ? " filled" : " not filled");
     }
-
 }
