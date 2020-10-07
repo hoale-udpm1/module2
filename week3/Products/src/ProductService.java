@@ -27,7 +27,7 @@ public class ProductService implements IService<Products> {
     }
 
     @Override
-    public void updateProducts(Integer id, Products newObject) {
+    public void updateProducts(Integer id, Object newObject) {
         for (int i = 0; i < products.size(); i++) {
             if (id == products.get(i).getId()) {
                 products.set(i, newObject);
